@@ -16,7 +16,5 @@
     "url": "https://github.com/iqra-javed/Patatap-Clone/issues"
   },
   "homepage": "https://github.com/iqra-javed/Patatap-Clone#readme",
-  "dependencies": {
-    "paper": "^0.12.0"
-  }
+  "dependencies": {}
 }
