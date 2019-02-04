@@ -1,0 +1,22 @@
+{
+  "name": "patatap-clone",
+  "version": "1.0.0",
+  "description": "Press any key A - Z or spacebar to trigger various sounds &amp; animations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqra-javed/Patatap-Clone.git"
+  },
+  "author": "Iqra Javed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iqra-javed/Patatap-Clone/issues"
+  },
+  "homepage": "https://github.com/iqra-javed/Patatap-Clone#readme",
+  "dependencies": {
+    "paper": "^0.12.0"
+  }
+}
