@@ -166,13 +166,18 @@
           src: ['sounds/moon.mp3']
         }),
         color: '#2c3e50'
-        }
+        },
+        space:{
+          sound: new Howl({
+            src: ['sounds/prism-2.mp3']
+          }),
+          color: '#f39c12'
+          }
         }
 
 var circles = [];
 
 	function onKeyDown(event) {
-       
         var maxPoint = new Point(view.size.width, view.size.height);
         var randomPoint = Point.random();
         var point = maxPoint * randomPoint;
@@ -186,6 +191,11 @@ var circles = [];
         for(var i = 0; i < circles.length; i++) {
             circles[i].fillColor.hue += 1;
             circles[i].scale(.9);
+            if(circles[i].area < 1){
+              circles[i].remove(); // remove the circle from the canvas
+              circles.splice(i, 1); // remove the circle from the array
+              console.log(circles);
+            }
         }
     }
 
